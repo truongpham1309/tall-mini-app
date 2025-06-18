@@ -1,0 +1,229 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: 100;
+    width: 100%;
+    max-width: 376px;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.popup.popup__categories {
+    background: #ffffff;
+}
+
+.popup main {
+    display: flex;
+    padding: 4px 16px 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.popup__box {
+    width: 100%;
+}
+
+.popup .box__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.popup .box__header .title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #58585a;
+}
+
+.popup .box__header .popup__view-all {
+    font-weight: 400;
+    font-size: 13px;
+    color: #db3d42;
+    cursor: pointer;
+}
+
+.popup__header {
+    margin-top: 20px;
+    display: flex;
+    padding: 8px 10px 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__header .description {
+    font-size: 12px;
+    color: #58585A;
+    margin-top: 4px;
+}
+
+.popup__box .box__content.type-voucher {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 375px;
+}
+
+.popup__box .box__content.type-voucher button {
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 100%;
+    color: #121212;
+    font-size: 12px;
+    font-weight: 400;
+    border: 1px solid #d4d7d9;
+    background: #ffffff;
+}
+
+.popup__box .box__content button.active {
+    border: 1px solid #db3d42 !important;
+    color: #db3d42;
+}
+
+.popup__box .box__content.popup__category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 12px;
+}
+
+.popup__box .box__content.popup__category button {
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid #d4d7d9;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 400; 
+}
+
+.popup__range-price .select-nation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    border: 1px solid #dadfe7;
+    gap: 6px;
+    border-radius: 6px;
+}
+
+.popup__range-price .title {
+    font-size: 12px;
+    color: #121212;
+    font-weight: 400;
+}
+
+.popup__range-price .range-price {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 12px;
+}
+
+.popup__range-price .range-price .range {
+    width: 327px;
+    height: 4px;
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    background: #db3d42;
+    border-radius: 999px;
+}
+
+.popup__range-price .range-price .dot {
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    position: absolute;
+    background: white;
+    border-radius: 9999px;
+    outline: 1px #db3d42 solid;
+}
+
+.popup__range-price .range-price .dot.left {
+    left: 1px;
+}
+
+.popup__range-price .range-price .dot.right {
+    right: 1px;
+}
+
+.popup__range-price .range-price .result-price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+
+.popup__range-price .range-price .result-price span {
+    font-size: 13px;
+    color: #525252;
+}
+
+.box__confirm {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+
+.box__confirm button {
+    width: 100%;
+    border-radius: 999px;
+    padding: 12px 16px;
+    font-size: 14px;
+    background: #0000000F;
+}
+
+.box__confirm button.confirm {
+    background: #db3d42;
+    color: #ffffff;
+}
+
+.nation__list {
+    width: 100%;
+}
+
+.nation__list .nation--items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.nation__list .nation--items.hover:hover {
+    background: #00000036;
+}
+
+.nation__list .nation--items>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #121212;
+}
+
+.search--countries {
+    position: relative;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.search--countries input {
+    width: 100%;
+    padding: 10px 12px 10px 38px;
+    border: 1px solid #E9EBED;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search--countries img {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}

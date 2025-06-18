@@ -1,0 +1,42 @@
+.cart {
+    position: fixed;
+    bottom: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 347px;
+    border: 1px solid #DB3D421F;
+    border-radius: 12px;
+    background: #FFF0F0;
+    padding: 6px;
+    font-weight: 500;
+    z-index: 100;
+}
+
+.cart .quantity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #141414;
+}
+
+.cart .quantity div {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.cart .price button {
+    background: #DB3D42;
+    border-radius: 6px;
+    padding: 8px;
+    color: #FFFFFF;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

@@ -1,0 +1,130 @@
+@import url(./categories.css);
+@import url(./header.css);
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    overflow: auto;
+    background: #FEF2F3;
+    max-width: 375px;
+    margin: 0 auto;
+    font-weight: 500;
+} 
+
+
+.content {
+    margin: 16px 0 ;
+}
+
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 0 16px;
+}
+
+.content__header--title {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #141414;
+}
+
+.content__header--viewAll a {
+    font-size: 12px;
+    color: #DB3D42;
+}
+
+.content__list {
+    display: flex;
+    gap: 16px;
+    scrollbar-width: none;
+    overflow-x: scroll;         
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    margin-left: 16px;
+}
+
+.content__list--item {
+    min-width: 156px;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.content__list--item .thumbnail {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.content__list--item .thumbnail img {
+    width: 156px;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+.content__list--item .thumbnail .add {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #DB3D42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__list--item .brandName {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 7px;
+}
+
+.content__list--item .brandName img {
+    width: 18px; 
+    height: 18px;
+}
+
+.content__list--item .brandName span {
+    color: #939395;
+    font-size: 11px;
+}
+
+.content__list--item .title {
+    font-size: 13px;
+    color: #141414;
+    margin-bottom: 6px;
+}
+
+.content__list--item .price {
+    margin-bottom: 8px;
+    color: #DB3D42;
+    font-size: 13px;
+    font-weight: 600;
+}
