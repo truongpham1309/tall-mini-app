@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="payment__btn">
-            <button>
+            <button onclick="document.querySelector('#popup__cart').hidden = false">
                 Thanh toán
             </button>
         </div>

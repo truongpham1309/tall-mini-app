@@ -35,6 +35,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // Route::get('/hyra-network', [HomeHyraNetworkController::class, 'index']);
+
 Route::get('/', function () {
     return view('mini-app.home.page');
 })->name('mini-app.home');

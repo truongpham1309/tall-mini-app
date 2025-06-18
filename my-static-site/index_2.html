@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <script type="module" src="client" data-navigate-track="reload"></script><link rel="stylesheet" href="css/index.css" data-navigate-track="reload">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="css/css2.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+    <div class="header">
+        <ul class="breakcrumb">
+            <img onclick="window.location.href='http://localhost:8000'" src="fonts/arrow-left.svg" alt="">
+            <li>Tất cả danh mục</li>
+        </ul>
+
+        <div class="options">
+            <button><img src="fonts/MenuIcon.svg" alt=""></button>
+            <div></div>
+            <button><img src="fonts/RemoveIcon.svg" alt=""></button>
+        </div>
+    </div>
+</header>
+            <section class="categories__main">
+    <div class="categories__list">
+        <button class="active">Tất cả</button>
+        <button>Ẩm thực</button>
+        <button>Du lịch</button>
+        <button>Giải trí</button>
+        <button>Sức khỏe</button>
+        <button>Giáo dục</button>
+    </div>
+
+    <div class="action">
+        <div class="action__search">
+            <input type="text" placeholder="Tìm kiếm...">
+            <img src="fonts/search.svg" alt="">
+        </div>
+        <button onclick="document.querySelector('#popup__categories').hidden = false" class="action__filter">
+            <img src="fonts/filter.svg" alt="">
+        </button>
+    </div>
+
+    <div class="list__services">
+        <div class="content__list--item" onclick="window.location.href='http://localhost:8000/mini-app/detail'">
+            <div class="thumbnail">
+                <img src="images/thumb.png" alt="">
+                <button class="add added">1</button>
+            </div>
+            <div class="brandName">
+                <img src="fonts/brand.svg" alt="">
+                <span>
+                    Starbucks
+                </span>
+            </div>
+            <div class="title">
+                Mua KFC với giá chỉ từ 19.000đ
+            </div>
+            <div class="price">
+                20.000đ
+            </div>
+        </div>
+
+        <div class="content__list--item">
+            <div class="thumbnail">
+                <img src="images/thumb.png" alt="">
+                <button class="add"><img src="fonts/plus.svg" alt=""></button>
+            </div>
+            <div class="brandName">
+                <img src="fonts/brand.svg" alt="">
+                <span>
+                    Starbucks
+                </span>
+            </div>
+            <div class="title">
+                Mua KFC với giá chỉ từ 19.000đ
+            </div>
+            <div class="price">
+                20.000đ
+            </div>
+        </div>
+
+        <div class="content__list--item">
+            <div class="thumbnail">
+                <img src="images/thumb.png" alt="">
+                <button class="add"><img src="fonts/plus.svg" alt=""></button>
+            </div>
+            <div class="brandName">
+                <img src="fonts/brand.svg" alt="">
+                <span>
+                    Starbucks
+                </span>
+            </div>
+            <div class="title">
+                Mua KFC với giá chỉ từ 19.000đ
+            </div>
+            <div class="price">
+                20.000đ
+            </div>
+        </div>
+
+        <div class="content__list--item">
+            <div class="thumbnail">
+                <img src="images/thumb.png" alt="">
+                <button class="add"><img src="fonts/plus.svg" alt=""></button>
+            </div>
+            <div class="brandName">
+                <img src="fonts/brand.svg" alt="">
+                <span>
+                    Starbucks
+                </span>
+            </div>
+            <div class="title">
+                Mua KFC với giá chỉ từ 19.000đ
+            </div>
+            <div class="price">
+                20.000đ
+            </div>
+        </div>
+    </div>
+</section>    <script type="module" src="client" data-navigate-track="reload"></script><link rel="stylesheet" href="css/popup-filter.css" data-navigate-track="reload"><div hidden="" id="popup__categories" class="popup popup__categories">
+    <div class="popup__header">
+        <div>
+            Bộ lọc nâng cao
+        </div>
+        <div onclick="document.querySelector('#popup__categories').hidden = true">
+            <img src="fonts/close-line.svg" alt="">
+        </div>
+    </div>
+
+    <main>
+        <div class="popup__box">
+            <div class="box__header">
+                <div class="title">
+                    Loại ưu đãi 
+                </div>
+            </div>
+            <div class="box__content type-voucher">
+                <button class="active">Tất cả</button>
+                <button>Deal Hot</button>
+                <button>Ưu đãi độc quyền</button>
+                <button>Ưu đãi gần bạn</button>
+                <button>Có thể bạn thích</button>
+                <button>Flash Sale</button>
+            </div>
+        </div>
+
+        <div class="popup__box">
+            <div class="box__header">
+                <div class="title">
+                    Danh mục
+                </div>
+            </div>
+            <div class="box__content popup__category">
+                <button class="active">Tất cả</button>
+
+                <button>Độc quyền</button>
+                <button class="active">Ẩm thực</button>
+                <button>Di chuyển</button>
+                <button>Làm đẹp</button>
+                <button>Viễn thông</button>
+                <button>Giải trí</button>
+                <button class="active">Giáo dục</button>
+                <button>Du lịch</button>
+                <button class="active">Mua sắm</button>
+                <button>Sức khỏe</button>
+                <button>Khách sạn</button>
+            </div>
+        </div>
+
+        <div class="popup__box">
+            <div class="box__header">
+                <div class="title">
+                    Vị trí
+                </div>
+                <div class="popup__view-all">
+                    Xem thêm
+                </div>
+            </div>
+            <div class="box__content type-voucher">
+                <button class="active">Toàn cầu</button>
+                <button>VietNam</button>
+                <button>Thailand</button>
+                <button>American</button>
+            </div>
+        </div>
+
+        <div class="popup__box">
+            <div class="box__header">
+                <div class="title">
+                    Khoảng giá
+                </div>
+            </div>
+            <div class="box__content popup__range-price">
+                <div class="select-nation">
+                    <div class="title">
+                        United States Dollars ($)
+                    </div>
+                    <img src="fonts/chevron-down.svg" alt="">
+                </div>
+                <div class="range-price">
+                    <div class="range"></div>
+                    <div class="dot left"></div>
+                    <div class="dot right"></div>
+                    <div class="result-price">
+                        <span>$0</span>
+                        <span>$200.000+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup__box">
+            <div class="box__header">
+                <div class="title">
+                    Sắp xếp
+                </div>
+            </div>
+            <div class="box__content type-voucher">
+                <button class="active">Đề xuất</button>
+                <button>Mới nhất</button>
+                <button>Giá tiền rẻ nhất</button>
+                <button>Giá điểm rẻ nhất </button>
+                <button>Bán chạy nhất</button>
+            </div>
+        </div>
+
+        <div class="box__confirm">
+            <button class="reset">
+                Đặt lại
+            </button>
+            <button class="confirm">
+                Xác nhận
+            </button>
+        </div>
+    </main>
+</div>
+        <script type="module" src="client" data-navigate-track="reload"></script><link rel="stylesheet" href="css/footer.css" data-navigate-track="reload"><footer class="footer__categories">
+    <div class="shopping">
+        <img src="fonts/shopping_basket.svg" alt="">
+        <div class="quantity">
+            1
+        </div>
+    </div>
+
+     <div class="payment">
+        <div class="payment__info">
+            <p>Purchase</p>
+            <div class="price">
+                <span>1.000.000.000</span>
+                <img src="fonts/hyra-coin.svg" alt="">
+            </div>
+        </div>
+        <div class="payment__btn">
+            <button onclick="document.querySelector('#popup__cart').hidden = false">
+                Thanh toán
+            </button>
+        </div>
+     </div>
+</footer>    </main>
+
+<script src="js/cdn.min.js" defer=""></script>
+
+</body></html>
