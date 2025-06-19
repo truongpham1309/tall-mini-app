@@ -1,5 +1,6 @@
 @import url(./categories.css);
 @import url(./header.css);
+@import url(./popup-filter.css);
 
 * {
     font-family: 'Inter', sans-serif;

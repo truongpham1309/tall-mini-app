@@ -1,7 +1,229 @@
-import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/resources/css/mini-app/popup-filter.css");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from "/@vite/client"
-const __vite__id = "D:/laragon/www/tall-filament-app-v2/resources/css/mini-app/popup-filter.css"
-const __vite__css = ".popup {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n    margin: 0 auto;\r\n    z-index: 100;\r\n    width: 100%;\r\n    max-width: 376px;\r\n    height: 100vh;\r\n    overflow-y: auto;\r\n    scrollbar-width: none;\r\n}\r\n\r\n.popup.popup__categories {\r\n    background: #ffffff;\r\n}\r\n\r\n.popup main {\r\n    display: flex;\r\n    padding: 4px 16px 32px 16px;\r\n    flex-direction: column;\r\n    align-items: flex-start;\r\n    gap: 20px;\r\n}\r\n\r\n.popup__box {\r\n    width: 100%;\r\n}\r\n\r\n.popup .box__header {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin-bottom: 8px;\r\n}\r\n\r\n.popup .box__header .title {\r\n    font-size: 13px;\r\n    font-weight: 400;\r\n    color: #58585a;\r\n}\r\n\r\n.popup .box__header .popup__view-all {\r\n    font-weight: 400;\r\n    font-size: 13px;\r\n    color: #db3d42;\r\n    cursor: pointer;\r\n}\r\n\r\n.popup__header {\r\n    margin-top: 20px;\r\n    display: flex;\r\n    padding: 8px 10px 8px 16px;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.popup__header .description {\r\n    font-size: 12px;\r\n    color: #58585A;\r\n    margin-top: 4px;\r\n}\r\n\r\n.popup__box .box__content.type-voucher {\r\n    display: grid;\r\n    grid-template-columns: repeat(2, 1fr);\r\n    gap: 8px;\r\n    max-width: 375px;\r\n}\r\n\r\n.popup__box .box__content.type-voucher button {\r\n    padding: 12px 10px;\r\n    border-radius: 8px;\r\n    width: 100%;\r\n    color: #121212;\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n    border: 1px solid #d4d7d9;\r\n    background: #ffffff;\r\n}\r\n\r\n.popup__box .box__content button.active {\r\n    border: 1px solid #db3d42 !important;\r\n    color: #db3d42;\r\n}\r\n\r\n.popup__box .box__content.popup__category {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    gap: 8px;\r\n    row-gap: 12px;\r\n}\r\n\r\n.popup__box .box__content.popup__category button {\r\n    padding: 8px 12px;\r\n    border-radius: 999px;\r\n    border: 1px solid #d4d7d9;\r\n    background: #ffffff;\r\n    font-size: 12px;\r\n    font-weight: 400; \r\n}\r\n\r\n.popup__range-price .select-nation {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    padding: 10px 8px;\r\n    border: 1px solid #dadfe7;\r\n    gap: 6px;\r\n    border-radius: 6px;\r\n}\r\n\r\n.popup__range-price .title {\r\n    font-size: 12px;\r\n    color: #121212;\r\n    font-weight: 400;\r\n}\r\n\r\n.popup__range-price .range-price {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative;\r\n    margin-top: 12px;\r\n}\r\n\r\n.popup__range-price .range-price .range {\r\n    width: 327px;\r\n    height: 4px;\r\n    left: 10px;\r\n    top: 6px;\r\n    position: absolute;\r\n    background: #db3d42;\r\n    border-radius: 999px;\r\n}\r\n\r\n.popup__range-price .range-price .dot {\r\n    width: 12px;\r\n    height: 12px;\r\n    top: 2px;\r\n    position: absolute;\r\n    background: white;\r\n    border-radius: 9999px;\r\n    outline: 1px #db3d42 solid;\r\n}\r\n\r\n.popup__range-price .range-price .dot.left {\r\n    left: 1px;\r\n}\r\n\r\n.popup__range-price .range-price .dot.right {\r\n    right: 1px;\r\n}\r\n\r\n.popup__range-price .range-price .result-price {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding-top: 22px;\r\n}\r\n\r\n.popup__range-price .range-price .result-price span {\r\n    font-size: 13px;\r\n    color: #525252;\r\n}\r\n\r\n.box__confirm {\r\n    display: flex;\r\n    gap: 8px;\r\n    width: 100%;\r\n}\r\n\r\n\r\n.box__confirm button {\r\n    width: 100%;\r\n    border-radius: 999px;\r\n    padding: 12px 16px;\r\n    font-size: 14px;\r\n    background: #0000000F;\r\n}\r\n\r\n.box__confirm button.confirm {\r\n    background: #db3d42;\r\n    color: #ffffff;\r\n}\r\n\r\n.nation__list {\r\n    width: 100%;\r\n}\r\n\r\n.nation__list .nation--items {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    padding: 12px 0;\r\n    width: 100%;\r\n}\r\n\r\n.nation__list .nation--items.hover:hover {\r\n    background: #00000036;\r\n}\r\n\r\n.nation__list .nation--items>div {\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 8px;\r\n    font-size: 14px;\r\n    color: #121212;\r\n}\r\n\r\n.search--countries {\r\n    position: relative;\r\n    width: 100%;\r\n    margin-bottom: -4px;\r\n}\r\n\r\n.search--countries input {\r\n    width: 100%;\r\n    padding: 10px 12px 10px 38px;\r\n    border: 1px solid #E9EBED;\r\n    border-radius: 8px;\r\n    outline: none;\r\n}\r\n\r\n.search--countries img {\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 12px;\r\n    transform: translateY(-50%);\r\n}"
-__vite__updateStyle(__vite__id, __vite__css)
-import.meta.hot.accept()
-export default __vite__css
-import.meta.hot.prune(() => __vite__removeStyle(__vite__id))
+.popup {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: 100;
+    width: 100%;
+    max-width: 376px;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.popup.popup__categories {
+    background: #ffffff;
+}
+
+.popup main {
+    display: flex;
+    padding: 4px 16px 32px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.popup__box {
+    width: 100%;
+}
+
+.popup .box__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.popup .box__header .title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #58585a;
+}
+
+.popup .box__header .popup__view-all {
+    font-weight: 400;
+    font-size: 13px;
+    color: #db3d42;
+    cursor: pointer;
+}
+
+.popup__header {
+    margin-top: 20px;
+    display: flex;
+    padding: 8px 10px 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__header .description {
+    font-size: 12px;
+    color: #58585A;
+    margin-top: 4px;
+}
+
+.popup__box .box__content.type-voucher {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    max-width: 375px;
+}
+
+.popup__box .box__content.type-voucher button {
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 100%;
+    color: #121212;
+    font-size: 12px;
+    font-weight: 400;
+    border: 1px solid #d4d7d9;
+    background: #ffffff;
+}
+
+.popup__box .box__content button.active {
+    border: 1px solid #db3d42 !important;
+    color: #db3d42;
+}
+
+.popup__box .box__content.popup__category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 12px;
+}
+
+.popup__box .box__content.popup__category button {
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid #d4d7d9;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 400; 
+}
+
+.popup__range-price .select-nation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    border: 1px solid #dadfe7;
+    gap: 6px;
+    border-radius: 6px;
+}
+
+.popup__range-price .title {
+    font-size: 12px;
+    color: #121212;
+    font-weight: 400;
+}
+
+.popup__range-price .range-price {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 12px;
+}
+
+.popup__range-price .range-price .range {
+    width: 327px;
+    height: 4px;
+    left: 10px;
+    top: 6px;
+    position: absolute;
+    background: #db3d42;
+    border-radius: 999px;
+}
+
+.popup__range-price .range-price .dot {
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    position: absolute;
+    background: white;
+    border-radius: 9999px;
+    outline: 1px #db3d42 solid;
+}
+
+.popup__range-price .range-price .dot.left {
+    left: 1px;
+}
+
+.popup__range-price .range-price .dot.right {
+    right: 1px;
+}
+
+.popup__range-price .range-price .result-price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+
+.popup__range-price .range-price .result-price span {
+    font-size: 13px;
+    color: #525252;
+}
+
+.box__confirm {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+
+.box__confirm button {
+    width: 100%;
+    border-radius: 999px;
+    padding: 12px 16px;
+    font-size: 14px;
+    background: #0000000F;
+}
+
+.box__confirm button.confirm {
+    background: #db3d42;
+    color: #ffffff;
+}
+
+.nation__list {
+    width: 100%;
+}
+
+.nation__list .nation--items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.nation__list .nation--items.hover:hover {
+    background: #00000036;
+}
+
+.nation__list .nation--items>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #121212;
+}
+
+.search--countries {
+    position: relative;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.search--countries input {
+    width: 100%;
+    padding: 10px 12px 10px 38px;
+    border: 1px solid #E9EBED;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search--countries img {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
